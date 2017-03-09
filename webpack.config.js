@@ -1,11 +1,10 @@
-import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-export default {
-  entry: 'index.js',
+module.exports = {
+  entry: './index.js',
   output: {
-    path: 'dist',
-    filename: 'index_bundle.js'
+    path: './dist',
+    filename: 'bundle.js'
   },
   plugins: [new HtmlWebpackPlugin()]
-};
+}

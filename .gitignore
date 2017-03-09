@@ -4,6 +4,9 @@ logs
 npm-debug.log*
 yarn-error.log
 
+# Built resources
+dist
+
 # Dependency directories
 node_modules
 
