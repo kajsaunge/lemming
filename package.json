@@ -1,0 +1,22 @@
+{
+  "name": "lemming",
+  "version": "1.0.0",
+  "description": "Webpack handlebars and beer",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajsaunge/lemming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kajsaunge/lemming/issues"
+  },
+  "homepage": "https://github.com/kajsaunge/lemming#readme",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "start": "-webpack --config mywebpack.config.js"
+  }
+}
