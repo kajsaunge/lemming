@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './index.js',
   output: {
-    path: './dist',
+    path: '/dist',
     filename: 'bundle.js'
   },
   module: {
@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin()],
   devServer: {
-    contentBase: './dist',
+    contentBase: '/dist',
     historyApiFallback: true,
     port: 9000
   }
