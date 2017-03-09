@@ -6,5 +6,15 @@ module.exports = {
     path: './dist',
     filename: 'bundle.js'
   },
-  plugins: [new HtmlWebpackPlugin()]
+  module: {
+    rules: [
+      {test: /\.handlebars$/, loader: "handlebars-loader"}
+    ]
+  },
+  plugins: [new HtmlWebpackPlugin()],
+  devServer: {
+    contentBase: './dist',
+    historyApiFallback: true,
+    port: 9000
+  }
 }
