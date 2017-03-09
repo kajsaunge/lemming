@@ -4,7 +4,7 @@ module.exports = {
   entry: './index.js',
   output: {
     path: __dirname,
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -15,6 +15,6 @@ module.exports = {
   devServer: {
     contentBase: '/dist',
     historyApiFallback: true,
-    port: 9000,
+    port: 9000
   }
 }
